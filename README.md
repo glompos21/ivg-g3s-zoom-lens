@@ -1,23 +1,25 @@
 
 
-# ivg-g3s with zoom lens
+# IVG-G3S  with zoom lens
 
 The camera has Gk7205V210 [datasheet](./datasheets/GK7205V210_Datasheet.pdf) with IMX307LQR image sensor. 
+
 It consumers about 120mA@12V. The 2 motors for zoom/focus are worm to the touch after 2min of operation.
 
 
-![Aliexpress](./images/aliexpres/1.jpg)
+<img src="./images/aliexpres/1.jpg" height="280">
 
-![ActualImage](./images/camera_dauterboard.jpg)
+<img src="./images/camera_dauterboard.jpg" height="280">
 
 # Dauterboard
 There is a dauter board  with passthour ethernet data with:
 - MCU Nuvoton-Tech NUC029LAN [datasheet](./datasheets/Nuvoton-Tech-NUC029LAN_C94618.pdf)
 - Motor MS41929 controller [datasheet](./datasheets/MS41929.pdf)
+
 It communicates with the main camera CPU via UART/serial.
 
-![dauterboard_pcb_frond](./images/dauterboard_pcb_frond.jpg)
-![dauterboard_pcb_back](./images/dauterboard_pcb_back.jpg)
+<img src="./images/dauterboard_pcb_frond.jpg" height="350">
+<img src="./images/dauterboard_pcb_back.jpg" height="350">
 
 
 # Install openIPC
@@ -33,6 +35,7 @@ Initial i had trouble unloacking the bootloader with Burn [see log](./logs/probl
 There is a serial communication when the camera boots to reset and set zoom and focus of the lens.
 The communication is uninderupted the entire time that the camera is powered.
 I use hex encoding @115200 to generate the some files using cutecom.
+
 - [boot of the camera](./logs/bootOutput.log). After Starting kernel ... the serial communication with the lens start
 - [boot of the camera with hex](./logs/bootOutput_hex.log)
 - [output_zoom](./logs/output_zoom.log)

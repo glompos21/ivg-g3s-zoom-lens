@@ -4,6 +4,8 @@
 
 The camera has Gk7205V210 [datasheet](./datasheets/GK7205V210_Datasheet.pdf) with IMX307LQR image sensor. 
 
+The lens __propable__ is a YT30021 ([pdf](https://www.silicondevice.com/file.upload/images/Gid1573Pdf_YTOT%20catalogue%202018.12.pdf)). 
+
 It consumers about 120mA@12V. The 2 motors for zoom/focus are worm to the touch after 2min of operation.
 
 
@@ -15,6 +17,8 @@ It consumers about 120mA@12V. The 2 motors for zoom/focus are worm to the touch 
 There is a dauter board  with passthour ethernet data with:
 - MCU Nuvoton-Tech NUC029LAN [datasheet](./datasheets/Nuvoton-Tech-NUC029LAN_C94618.pdf)
 - Motor MS41929 controller [datasheet](./datasheets/MS41929.pdf)
+
+After a reverse image search i found the module manufacturer: [FSAN 38*38mm Motorized Zoom Lens IP Camera Module PCB Control Board](https://www.alibaba.com/product-detail/FSAN-38-38mm-Motorized-Zoom-Lens_1600387513614.html)
 
 It communicates with the main camera CPU via UART/serial.
 

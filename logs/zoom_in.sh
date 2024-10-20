@@ -1,0 +1,6 @@
+#!/bin/sh 
+stty -F /dev/ttyUSB0 115200 
+printf '\xFF\x01\x00\x00\x00\x00\x01' >/dev/ttyUSB0 
+printf '\xFF\x01\x00\x20\x00\x00\x21' >/dev/ttyUSB0 
+sleep 1  
+printf '\xFF\x01\x00\x00\x00\x00\x01' >/dev/ttyUSB0

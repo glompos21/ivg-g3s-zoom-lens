@@ -46,3 +46,14 @@ I use hex encoding @115200 to generate the some files using cutecom.
 - [output_focus](./logs/output_focus.log)
 - [output_zoom_focus](./output_zoom_focus.log)
 - [output_zoom_focus_onlyHex](./logs/output_zoom_focus_onlyHex.log)
+
+## PTZ Protocols
+
+https://github.com/OpenIPC/wiki/blob/82c5e6d1f05edf928b24b7d099f65e45d04ce4e6/ru/resources.md?plain=1#L52
+
+different scripts to test PTZ Protocols without any success
+- pelcoD: logs/zoom_in.sh, logs/pelcoD.py
+- VISCA: logs/VISCA.py
+- BiCom: logs/BiCom.py
+- hitachi: logs/hitachi.py
+
